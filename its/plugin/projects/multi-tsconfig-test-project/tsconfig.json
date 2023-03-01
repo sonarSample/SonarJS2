@@ -1,0 +1,4 @@
+{
+  "include": ["src/bar"],
+  "exclude": ["src/bar/excluded"]
+}

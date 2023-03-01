@@ -1,0 +1,25 @@
+name: 'Typedoc: site for helper function for the ESLint bridge'
+on:
+  push:
+    branches:
+      - master
+permissions:
+  contents: write
+jobs:
+  publish-rules-helper-site:
+    runs-on: ubuntu-latest
+    name: Publish typedoc
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+    - name: Build typedoc site
+      run: |
+        npm ci
+        npm run td
+    - name: Publish typedoc site
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh_pages
+        folder: ./typedoc/site
+        target-folder: ./typedoc
+        commit-message: "Update the ESLint bridge helper functions site"

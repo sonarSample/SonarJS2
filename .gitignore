@@ -1,0 +1,42 @@
+# Maven
+target/
+
+lib/
+node_modules/
+coverage/
+test-report.xml
+
+sonarjs-*
+
+# IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings
+
+# Visual Studio
+.vs/
+
+# ---- Mac OS X
+.DS_Store
+Icon?
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# ---- Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# ---- Sonar
+.sonar
+.scannerwork
